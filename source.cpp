@@ -4,7 +4,7 @@ using namespace std;
 const int Row=5;
 const int Col=10;
  
- display(bool seats[Row][Col]){
+ int display(bool seats[Row][Col]){
  	system("cls");
  	cout<<"  ";
  	for(int i=1; i<=Col; i++){
@@ -25,7 +25,7 @@ const int Col=10;
 	}
  }
 
-reservation(bool seats[Row][Col], char row, int col){
+int reservation(bool seats[Row][Col], char row, int col){
 	if(seats[row-'A'][col-1]){
 		cout<<"Seat is already reserved"<<endl;
 	}
